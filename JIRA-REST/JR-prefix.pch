@@ -1,0 +1,21 @@
+//
+//  Header.h
+//  JIRA-REST
+//
+//  Created by ray on 16/10/26.
+//  Copyright © 2016年 ray. All rights reserved.
+//
+
+#ifndef Header_h
+#define Header_h
+
+
+#ifdef __OBJC__
+
+#import "TCKit.h"
+#import "TCDebug.h"
+
+#endif
+
+
+#endif /* Header_h */

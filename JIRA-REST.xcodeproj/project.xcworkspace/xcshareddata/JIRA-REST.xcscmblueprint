@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "42FDCF9600D97F707C482C92AA9D8D6D179D7702",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "78657FD740A36FD7D0A79ED321BB432F67A9C67C" : 9223372036854775807,
+    "42FDCF9600D97F707C482C92AA9D8D6D179D7702" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F523C040-A486-4DC2-92D6-6E709721E04D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "78657FD740A36FD7D0A79ED321BB432F67A9C67C" : "TEST-JIRA-REST-API\/TCKit\/",
+    "42FDCF9600D97F707C482C92AA9D8D6D179D7702" : "TEST-JIRA-REST-API\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JIRA-REST",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JIRA-REST.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:m221539\/TEST-JIRA-REST-API.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "42FDCF9600D97F707C482C92AA9D8D6D179D7702"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dake\/TCKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78657FD740A36FD7D0A79ED321BB432F67A9C67C"
+    }
+  ]
+}
