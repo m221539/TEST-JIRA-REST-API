@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7158EBDC1DC739100049126B /* JRCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBC51DC739100049126B /* JRCreateMeta.m */; };
+		7158EBDD1DC739100049126B /* JRFieldCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBC71DC739100049126B /* JRFieldCreateMeta.m */; };
+		7158EBDE1DC739100049126B /* JRFieldsUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBC91DC739100049126B /* JRFieldsUpdateModel.m */; };
+		7158EBDF1DC739100049126B /* JRIssueCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBCB1DC739100049126B /* JRIssueCreateMeta.m */; };
+		7158EBE01DC739100049126B /* JRIssueUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBCD1DC739100049126B /* JRIssueUpdateModel.m */; };
+		7158EBE11DC739100049126B /* JRProjectCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBCF1DC739100049126B /* JRProjectCreateMeta.m */; };
+		7158EBE21DC739100049126B /* JRIssueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBD21DC739100049126B /* JRIssueService.m */; };
+		7158EBE31DC739100049126B /* JRProjectService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBD71DC739100049126B /* JRProjectService.m */; };
+		7158EBE91DC739A80049126B /* JRRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBE81DC739A80049126B /* JRRequestCenter.m */; };
+		7158EBEE1DC73A240049126B /* JREntranceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBED1DC73A240049126B /* JREntranceService.m */; };
+		7158EBF31DC73A540049126B /* JRAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7158EBF21DC73A540049126B /* JRAccount.m */; };
 		71A159B21DBDB558001431F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A159B11DBDB558001431F1 /* main.m */; };
 		71A159B51DBDB558001431F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A159B41DBDB558001431F1 /* AppDelegate.m */; };
 		71A159B81DBDB558001431F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A159B71DBDB558001431F1 /* ViewController.m */; };
@@ -84,18 +95,31 @@
 		71A15AC21DBDBEFC001431F1 /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15A781DBDBEFC001431F1 /* AnimatedGIFImageSerialization.m */; };
 		71A15AC31DBDBEFC001431F1 /* UIImage+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15A7A1DBDBEFC001431F1 /* UIImage+CGImage.m */; };
 		71A15AC41DBDBEFC001431F1 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15A7C1DBDBEFC001431F1 /* UIImage+Resize.m */; };
-		71A15AC71DBDBF77001431F1 /* JRRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15AC61DBDBF77001431F1 /* JRRequestCenter.m */; };
-		71A15ACE1DBDD1B0001431F1 /* JRIssueCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15ACD1DBDD1B0001431F1 /* JRIssueCreateMeta.m */; };
-		71A15AD11DBDD2C6001431F1 /* JRFieldCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15AD01DBDD2C6001431F1 /* JRFieldCreateMeta.m */; };
-		71A15AD51DBDD926001431F1 /* JRIssueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15AD41DBDD926001431F1 /* JRIssueService.m */; };
-		71A15ADA1DC0775A001431F1 /* JRProjectCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15AD91DC0775A001431F1 /* JRProjectCreateMeta.m */; };
-		71A15ADE1DC077DC001431F1 /* JRCreateMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15ADD1DC077DC001431F1 /* JRCreateMeta.m */; };
-		71A15AE51DC07C9B001431F1 /* JRIssueUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15AE41DC07C9B001431F1 /* JRIssueUpdateModel.m */; };
-		71A15AE91DC07CFE001431F1 /* JRFieldsUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A15AE81DC07CFE001431F1 /* JRFieldsUpdateModel.m */; };
-		71CBBDC61DC30BBF00275A32 /* JREntranceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CBBDC51DC30BBF00275A32 /* JREntranceService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7158EBC41DC739100049126B /* JRCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCreateMeta.h; sourceTree = "<group>"; };
+		7158EBC51DC739100049126B /* JRCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCreateMeta.m; sourceTree = "<group>"; };
+		7158EBC61DC739100049126B /* JRFieldCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFieldCreateMeta.h; sourceTree = "<group>"; };
+		7158EBC71DC739100049126B /* JRFieldCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFieldCreateMeta.m; sourceTree = "<group>"; };
+		7158EBC81DC739100049126B /* JRFieldsUpdateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFieldsUpdateModel.h; sourceTree = "<group>"; };
+		7158EBC91DC739100049126B /* JRFieldsUpdateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFieldsUpdateModel.m; sourceTree = "<group>"; };
+		7158EBCA1DC739100049126B /* JRIssueCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIssueCreateMeta.h; sourceTree = "<group>"; };
+		7158EBCB1DC739100049126B /* JRIssueCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIssueCreateMeta.m; sourceTree = "<group>"; };
+		7158EBCC1DC739100049126B /* JRIssueUpdateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIssueUpdateModel.h; sourceTree = "<group>"; };
+		7158EBCD1DC739100049126B /* JRIssueUpdateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIssueUpdateModel.m; sourceTree = "<group>"; };
+		7158EBCE1DC739100049126B /* JRProjectCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRProjectCreateMeta.h; sourceTree = "<group>"; };
+		7158EBCF1DC739100049126B /* JRProjectCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRProjectCreateMeta.m; sourceTree = "<group>"; };
+		7158EBD11DC739100049126B /* JRIssueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIssueService.h; sourceTree = "<group>"; };
+		7158EBD21DC739100049126B /* JRIssueService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIssueService.m; sourceTree = "<group>"; };
+		7158EBD61DC739100049126B /* JRProjectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRProjectService.h; sourceTree = "<group>"; };
+		7158EBD71DC739100049126B /* JRProjectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRProjectService.m; sourceTree = "<group>"; };
+		7158EBE71DC739A80049126B /* JRRequestCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRRequestCenter.h; sourceTree = "<group>"; };
+		7158EBE81DC739A80049126B /* JRRequestCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRRequestCenter.m; sourceTree = "<group>"; };
+		7158EBEC1DC73A240049126B /* JREntranceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JREntranceService.h; sourceTree = "<group>"; };
+		7158EBED1DC73A240049126B /* JREntranceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JREntranceService.m; sourceTree = "<group>"; };
+		7158EBF11DC73A540049126B /* JRAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAccount.h; sourceTree = "<group>"; };
+		7158EBF21DC73A540049126B /* JRAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAccount.m; sourceTree = "<group>"; };
 		71A159AD1DBDB558001431F1 /* JIRA-REST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JIRA-REST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A159B11DBDB558001431F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71A159B31DBDB558001431F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -261,25 +285,7 @@
 		71A15A7A1DBDBEFC001431F1 /* UIImage+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGImage.m"; sourceTree = "<group>"; };
 		71A15A7B1DBDBEFC001431F1 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		71A15A7C1DBDBEFC001431F1 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
-		71A15AC51DBDBF77001431F1 /* JRRequestCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRRequestCenter.h; sourceTree = "<group>"; };
-		71A15AC61DBDBF77001431F1 /* JRRequestCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRRequestCenter.m; sourceTree = "<group>"; };
-		71A15ACC1DBDD1B0001431F1 /* JRIssueCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIssueCreateMeta.h; sourceTree = "<group>"; };
-		71A15ACD1DBDD1B0001431F1 /* JRIssueCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIssueCreateMeta.m; sourceTree = "<group>"; };
-		71A15ACF1DBDD2C6001431F1 /* JRFieldCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFieldCreateMeta.h; sourceTree = "<group>"; };
-		71A15AD01DBDD2C6001431F1 /* JRFieldCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFieldCreateMeta.m; sourceTree = "<group>"; };
-		71A15AD31DBDD926001431F1 /* JRIssueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIssueService.h; sourceTree = "<group>"; };
-		71A15AD41DBDD926001431F1 /* JRIssueService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIssueService.m; sourceTree = "<group>"; };
-		71A15AD81DC0775A001431F1 /* JRProjectCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRProjectCreateMeta.h; sourceTree = "<group>"; };
-		71A15AD91DC0775A001431F1 /* JRProjectCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRProjectCreateMeta.m; sourceTree = "<group>"; };
-		71A15ADC1DC077DC001431F1 /* JRCreateMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCreateMeta.h; sourceTree = "<group>"; };
-		71A15ADD1DC077DC001431F1 /* JRCreateMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCreateMeta.m; sourceTree = "<group>"; };
-		71A15AE31DC07C9B001431F1 /* JRIssueUpdateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIssueUpdateModel.h; sourceTree = "<group>"; };
-		71A15AE41DC07C9B001431F1 /* JRIssueUpdateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIssueUpdateModel.m; sourceTree = "<group>"; };
-		71A15AE71DC07CFE001431F1 /* JRFieldsUpdateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFieldsUpdateModel.h; sourceTree = "<group>"; };
-		71A15AE81DC07CFE001431F1 /* JRFieldsUpdateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFieldsUpdateModel.m; sourceTree = "<group>"; };
 		71A15AEA1DC09839001431F1 /* JR-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JR-prefix.pch"; sourceTree = "<group>"; };
-		71CBBDC41DC30BBF00275A32 /* JREntranceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JREntranceService.h; sourceTree = "<group>"; };
-		71CBBDC51DC30BBF00275A32 /* JREntranceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JREntranceService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +299,128 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7158EBC01DC739100049126B /* JIRA-REST */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBE51DC739610049126B /* MyCenter */,
+				7158EBC21DC739100049126B /* IssueCreate */,
+				7158EBD31DC739100049126B /* IssueList */,
+				7158EBD41DC739100049126B /* Project */,
+			);
+			path = "JIRA-REST";
+			sourceTree = "<group>";
+		};
+		7158EBC21DC739100049126B /* IssueCreate */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBC31DC739100049126B /* Model */,
+				7158EBD01DC739100049126B /* Service */,
+			);
+			path = IssueCreate;
+			sourceTree = "<group>";
+		};
+		7158EBC31DC739100049126B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBC41DC739100049126B /* JRCreateMeta.h */,
+				7158EBC51DC739100049126B /* JRCreateMeta.m */,
+				7158EBC61DC739100049126B /* JRFieldCreateMeta.h */,
+				7158EBC71DC739100049126B /* JRFieldCreateMeta.m */,
+				7158EBC81DC739100049126B /* JRFieldsUpdateModel.h */,
+				7158EBC91DC739100049126B /* JRFieldsUpdateModel.m */,
+				7158EBCA1DC739100049126B /* JRIssueCreateMeta.h */,
+				7158EBCB1DC739100049126B /* JRIssueCreateMeta.m */,
+				7158EBCC1DC739100049126B /* JRIssueUpdateModel.h */,
+				7158EBCD1DC739100049126B /* JRIssueUpdateModel.m */,
+				7158EBCE1DC739100049126B /* JRProjectCreateMeta.h */,
+				7158EBCF1DC739100049126B /* JRProjectCreateMeta.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7158EBD01DC739100049126B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBD11DC739100049126B /* JRIssueService.h */,
+				7158EBD21DC739100049126B /* JRIssueService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7158EBD31DC739100049126B /* IssueList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IssueList;
+			sourceTree = "<group>";
+		};
+		7158EBD41DC739100049126B /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBD51DC739100049126B /* Service */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		7158EBD51DC739100049126B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBD61DC739100049126B /* JRProjectService.h */,
+				7158EBD71DC739100049126B /* JRProjectService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7158EBE51DC739610049126B /* MyCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyCenter;
+			sourceTree = "<group>";
+		};
+		7158EBE61DC739A80049126B /* NetWorkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBE71DC739A80049126B /* JRRequestCenter.h */,
+				7158EBE81DC739A80049126B /* JRRequestCenter.m */,
+			);
+			path = NetWorkLayer;
+			sourceTree = "<group>";
+		};
+		7158EBEA1DC73A240049126B /* Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBEB1DC73A240049126B /* Service */,
+			);
+			path = Entrance;
+			sourceTree = "<group>";
+		};
+		7158EBEB1DC73A240049126B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBEC1DC73A240049126B /* JREntranceService.h */,
+				7158EBED1DC73A240049126B /* JREntranceService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7158EBEF1DC73A430049126B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBF01DC73A430049126B /* Account */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7158EBF01DC73A430049126B /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				7158EBF11DC73A540049126B /* JRAccount.h */,
+				7158EBF21DC73A540049126B /* JRAccount.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		71A159A41DBDB558001431F1 = {
 			isa = PBXGroup;
 			children = (
@@ -313,9 +441,10 @@
 		71A159AF1DBDB558001431F1 /* JIRA-REST */ = {
 			isa = PBXGroup;
 			children = (
-				71A15AD21DBDD8E2001431F1 /* Service */,
-				71A15ACB1DBDD1A5001431F1 /* Model */,
-				71A15AC81DBDBF87001431F1 /* Request */,
+				7158EBEF1DC73A430049126B /* Common */,
+				7158EBEA1DC73A240049126B /* Entrance */,
+				7158EBE61DC739A80049126B /* NetWorkLayer */,
+				7158EBC01DC739100049126B /* JIRA-REST */,
 				71A159B31DBDB558001431F1 /* AppDelegate.h */,
 				71A159B41DBDB558001431F1 /* AppDelegate.m */,
 				71A159B61DBDB558001431F1 /* ViewController.h */,
@@ -700,61 +829,6 @@
 			path = AnimatedGIFImageSerialization;
 			sourceTree = "<group>";
 		};
-		71A15AC81DBDBF87001431F1 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				71A15AC51DBDBF77001431F1 /* JRRequestCenter.h */,
-				71A15AC61DBDBF77001431F1 /* JRRequestCenter.m */,
-			);
-			name = Request;
-			sourceTree = "<group>";
-		};
-		71A15ACB1DBDD1A5001431F1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				71A15AE61DC07CE0001431F1 /* Update */,
-				71A15ADB1DC077C2001431F1 /* CreateMeta */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		71A15AD21DBDD8E2001431F1 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				71A15AD31DBDD926001431F1 /* JRIssueService.h */,
-				71A15AD41DBDD926001431F1 /* JRIssueService.m */,
-				71CBBDC41DC30BBF00275A32 /* JREntranceService.h */,
-				71CBBDC51DC30BBF00275A32 /* JREntranceService.m */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		71A15ADB1DC077C2001431F1 /* CreateMeta */ = {
-			isa = PBXGroup;
-			children = (
-				71A15ACC1DBDD1B0001431F1 /* JRIssueCreateMeta.h */,
-				71A15ACD1DBDD1B0001431F1 /* JRIssueCreateMeta.m */,
-				71A15ACF1DBDD2C6001431F1 /* JRFieldCreateMeta.h */,
-				71A15AD01DBDD2C6001431F1 /* JRFieldCreateMeta.m */,
-				71A15AD81DC0775A001431F1 /* JRProjectCreateMeta.h */,
-				71A15AD91DC0775A001431F1 /* JRProjectCreateMeta.m */,
-				71A15ADC1DC077DC001431F1 /* JRCreateMeta.h */,
-				71A15ADD1DC077DC001431F1 /* JRCreateMeta.m */,
-			);
-			name = CreateMeta;
-			sourceTree = "<group>";
-		};
-		71A15AE61DC07CE0001431F1 /* Update */ = {
-			isa = PBXGroup;
-			children = (
-				71A15AE31DC07C9B001431F1 /* JRIssueUpdateModel.h */,
-				71A15AE41DC07C9B001431F1 /* JRIssueUpdateModel.m */,
-				71A15AE71DC07CFE001431F1 /* JRFieldsUpdateModel.h */,
-				71A15AE81DC07CFE001431F1 /* JRFieldsUpdateModel.m */,
-			);
-			name = Update;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -826,29 +900,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71A15ADE1DC077DC001431F1 /* JRCreateMeta.m in Sources */,
-				71CBBDC61DC30BBF00275A32 /* JREntranceService.m in Sources */,
 				71A15ABF1DBDBEFC001431F1 /* UIView+TCHelper.m in Sources */,
 				71A15A951DBDBEFC001431F1 /* AFURLRequestSerialization.m in Sources */,
 				71A15A9C1DBDBEFC001431F1 /* TCHTTPTimerPolicy+TCHTTPRequest.m in Sources */,
-				71A15ADA1DC0775A001431F1 /* JRProjectCreateMeta.m in Sources */,
 				71A15AAB1DBDBEFC001431F1 /* NSObject+TCPersistent.m in Sources */,
 				71A15AA61DBDBEFC001431F1 /* TCAppInfo.m in Sources */,
 				71A15ABC1DBDBEFC001431F1 /* UIScrollView+TCHelper.m in Sources */,
 				71A15AAF1DBDBEFC001431F1 /* NSObject+TCMappingExtra.m in Sources */,
 				71A15A811DBDBEFC001431F1 /* UIColor+TCUtilities.m in Sources */,
+				7158EBE91DC739A80049126B /* JRRequestCenter.m in Sources */,
 				71A15AB31DBDBEFC001431F1 /* UIActionSheet+TCBlocks.m in Sources */,
 				71A15A8D1DBDBEFC001431F1 /* NSTimer+TCHelper.m in Sources */,
 				71A15AB41DBDBEFC001431F1 /* UIAlertView+TCBlocks.m in Sources */,
+				7158EBDF1DC739100049126B /* JRIssueCreateMeta.m in Sources */,
+				7158EBDE1DC739100049126B /* JRFieldsUpdateModel.m in Sources */,
 				71A15AAA1DBDBEFC001431F1 /* NSObject+TCMapping.m in Sources */,
 				71A15A981DBDBEFC001431F1 /* TCHTTPRequestProcessor.m in Sources */,
 				71A15AAC1DBDBEFC001431F1 /* TCMappingMeta.m in Sources */,
 				71A15A7F1DBDBEFC001431F1 /* NSDate+TCUtilities.m in Sources */,
 				71A15A831DBDBEFC001431F1 /* NSData+TCCypher.m in Sources */,
-				71A15ACE1DBDD1B0001431F1 /* JRIssueCreateMeta.m in Sources */,
 				71A15AA41DBDBEFC001431F1 /* TCHTTPRequestCenter.m in Sources */,
 				71A15A971DBDBEFC001431F1 /* AFURLSessionManager.m in Sources */,
 				71A15A891DBDBEFC001431F1 /* iConsole.m in Sources */,
+				7158EBDD1DC739100049126B /* JRFieldCreateMeta.m in Sources */,
 				71A15A8E1DBDBEFC001431F1 /* NSURL+TCHelper.m in Sources */,
 				71A15AA71DBDBEFC001431F1 /* TCMobileProvisioning.m in Sources */,
 				71A15AA21DBDBEFC001431F1 /* TCHTTPRequest.m in Sources */,
@@ -857,7 +931,9 @@
 				71A15AA31DBDBEFC001431F1 /* TCHTTPRequestCenter+Private.m in Sources */,
 				71A159B81DBDB558001431F1 /* ViewController.m in Sources */,
 				71A15A861DBDBEFC001431F1 /* TCProxyDelegate.m in Sources */,
+				7158EBF31DC73A540049126B /* JRAccount.m in Sources */,
 				71A15A911DBDBEFC001431F1 /* UIWindow+TCHelper.m in Sources */,
+				7158EBDC1DC739100049126B /* JRCreateMeta.m in Sources */,
 				71A15A8C1DBDBEFC001431F1 /* NSString+TCHelper.m in Sources */,
 				71A15A9D1DBDBEFC001431F1 /* TCHTTPTimerPolicy.m in Sources */,
 				71A15A881DBDBEFC001431F1 /* UICKeyChainStore.m in Sources */,
@@ -866,18 +942,21 @@
 				71A15A931DBDBEFC001431F1 /* AFNetworkReachabilityManager.m in Sources */,
 				71A15AA01DBDBEFC001431F1 /* TCHTTPCacheRequest.m in Sources */,
 				71A15A991DBDBEFC001431F1 /* NSURLSessionTask+TCResumeDownload.m in Sources */,
+				7158EBE01DC739100049126B /* JRIssueUpdateModel.m in Sources */,
 				71A15A8F1DBDBEFC001431F1 /* UIApplication+TCHelper.m in Sources */,
 				71A15A821DBDBEFC001431F1 /* FCUUID.m in Sources */,
 				71A15AB51DBDBEFC001431F1 /* TCPopupContainer.m in Sources */,
 				71A159B51DBDB558001431F1 /* AppDelegate.m in Sources */,
 				71A15ABE1DBDBEFC001431F1 /* UITextView+Placeholder.m in Sources */,
 				71A15A921DBDBEFC001431F1 /* AFHTTPSessionManager.m in Sources */,
+				7158EBE21DC739100049126B /* JRIssueService.m in Sources */,
 				71A15A8A1DBDBEFC001431F1 /* CLLocation+TCHelper.m in Sources */,
-				71A15AC71DBDBF77001431F1 /* JRRequestCenter.m in Sources */,
 				71A15AB81DBDBEFC001431F1 /* UIWebView+TCWKWebView.m in Sources */,
+				7158EBE11DC739100049126B /* JRProjectCreateMeta.m in Sources */,
 				71A15AA11DBDBEFC001431F1 /* TCHTTPRequest+Public.m in Sources */,
 				71A15ABA1DBDBEFC001431F1 /* UIButton+TCHelper.m in Sources */,
 				71A15AC11DBDBEFC001431F1 /* UIViewController+PopBackHandler.m in Sources */,
+				7158EBEE1DC73A240049126B /* JREntranceService.m in Sources */,
 				71A15AC41DBDBEFC001431F1 /* UIImage+Resize.m in Sources */,
 				71A15AA91DBDBEFC001431F1 /* NSObject+TCCoding.m in Sources */,
 				71A15AAE1DBDBEFC001431F1 /* NSManagedObjectContext+TCMapping.m in Sources */,
@@ -889,13 +968,11 @@
 				71A15A841DBDBEFC001431F1 /* NSString+TCCypher.m in Sources */,
 				71A15ABB1DBDBEFC001431F1 /* UILabel+TCHelper.m in Sources */,
 				71A159B21DBDB558001431F1 /* main.m in Sources */,
-				71A15AD11DBDD2C6001431F1 /* JRFieldCreateMeta.m in Sources */,
 				71A15AB21DBDBEFC001431F1 /* TCAlertViewDelegate.m in Sources */,
 				71A15A941DBDBEFC001431F1 /* AFSecurityPolicy.m in Sources */,
 				71A15A801DBDBEFC001431F1 /* NSObject+TCUtilities.m in Sources */,
 				71A15AA51DBDBEFC001431F1 /* TCHTTPRequestHelper.m in Sources */,
-				71A15AE91DC07CFE001431F1 /* JRFieldsUpdateModel.m in Sources */,
-				71A15AD51DBDD926001431F1 /* JRIssueService.m in Sources */,
+				7158EBE31DC739100049126B /* JRProjectService.m in Sources */,
 				71A15AC21DBDBEFC001431F1 /* AnimatedGIFImageSerialization.m in Sources */,
 				71A15A851DBDBEFC001431F1 /* TCProxy.m in Sources */,
 				71A15ABD1DBDBEFC001431F1 /* UITextField+TCHelper.m in Sources */,
@@ -905,7 +982,6 @@
 				71A15AAD1DBDBEFC001431F1 /* TCMappingOption.m in Sources */,
 				71A15AB01DBDBEFC001431F1 /* TCAlertAction.m in Sources */,
 				71A15A9E1DBDBEFC001431F1 /* TCBaseResponseValidator.m in Sources */,
-				71A15AE51DC07C9B001431F1 /* JRIssueUpdateModel.m in Sources */,
 				71A15AC01DBDBEFC001431F1 /* UIViewController+TCHelper.m in Sources */,
 				71A15A9F1DBDBEFC001431F1 /* TCHTTPBatchRequest.m in Sources */,
 				71A15AB91DBDBEFC001431F1 /* WKWebView+TCWKWebView.m in Sources */,

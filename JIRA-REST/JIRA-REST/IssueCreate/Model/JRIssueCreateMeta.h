@@ -14,4 +14,6 @@
 @property (nonatomic, assign) BOOL subtask;
 @property (nonatomic, strong) NSDictionary<NSString *, JRFieldCreateMeta *> *fields;
 
+- (NSArray *)sortedFieldsKey; // 暂时写到这
+
 @end

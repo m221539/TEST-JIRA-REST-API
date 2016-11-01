@@ -9,6 +9,7 @@
 #import "JREntranceService.h"
 #import "JRRequestCenter.h"
 #import "TCHTTPRequest.h"
+#import "JRAccount.h"
 
 typedef NS_ENUM(NSUInteger, JRLoginReason) {
     kJRLoginReasonOK,
@@ -53,37 +54,46 @@ typedef NS_ENUM(NSUInteger, JRLoginReason) {
             wSelf.isLogining = NO;
             NSDictionary *allHeaderFields = ((NSHTTPURLResponse *)(((TCHTTPRequest *)request).requestTask.response)).allHeaderFields;
             NSLog(@"%@", allHeaderFields);
-            if (nil != allHeaderFields) {
+            
+            do {
+                if (nil == allHeaderFields) {
+                    break;
+                }
+                
                 static NSString * const loginResonKey = @"X-Seraph-LoginReason";
                 NSString *loginReason = allHeaderFields[loginResonKey];
-                if (nil != loginReason && nil != reasonMap[loginReason]) {
-                    JRLoginReason reason = [reasonMap[loginReason] integerValue];
-                    switch (reason) {
-                        case kJRLoginReasonOK: {
-                            if (nil != resultBlock) {
-                                resultBlock(YES, nil);
-                            }
-                            return;
-                        }
-                        case kJRLoginReasonFailed: {
-                            if (nil != resultBlock) {
-                                resultBlock(NO, nil);
-                            }
-                            return;
-                        }
-                        case kJRLoginReasonDenied: {
-                            if (nil != resultBlock) {
-                                [wSelf fetchCaptcha:^(UIImage *image) {
-                                    resultBlock(NO, image);
-                                }];
-                            }
-                            return;
-                        }
-                        default:
-                            return;
-                    }
+                
+                if (nil == loginReason || nil == reasonMap[loginReason]) {
+                    break;
                 }
-            }
+                
+                if (nil == resultBlock) {
+                    break;
+                }
+                
+                JRLoginReason reason = [reasonMap[loginReason] integerValue];
+                switch (reason) {
+                    case kJRLoginReasonOK: {
+                        [JRAccount.currentAccount refreshAccountWithName:userName];
+                        resultBlock(YES, nil);
+                        return;
+                    }
+                    case kJRLoginReasonFailed: {
+                        resultBlock(NO, nil);
+                        return;
+                    }
+                    case kJRLoginReasonDenied: {
+                        [wSelf fetchCaptcha:^(UIImage *image) {
+                            resultBlock(NO, image);
+                        }];
+                        return;
+                    }
+                    default:
+                        break;
+                }
+            } while (false);
+            
+
             if (nil != resultBlock) {
                 resultBlock(NO, nil);
             }
@@ -95,14 +105,7 @@ typedef NS_ENUM(NSUInteger, JRLoginReason) {
     return res;
 }
 
-- (void)logout {
-    NSArray<NSHTTPCookie *> *cookies = [NSHTTPCookieStorage sharedHTTPCookieStorage].cookies;
-    [cookies enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSHTTPCookie  *_Nonnull cookie, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([cookie.domain isEqualToString:@"jira.sudiyi.cn"] && ([cookie.name isEqualToString:@"atlassian.xsrf.token"] || [cookie.name isEqualToString:@"JSESSIONID"])) {
-            [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
-        }
-    }];
-}
+
 
 - (BOOL)fetchCaptcha:(void (^)(UIImage *image))resultBlock {
     

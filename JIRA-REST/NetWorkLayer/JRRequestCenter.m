@@ -7,6 +7,7 @@
 //
 
 #import "JRRequestCenter.h"
+#import "JRAccount.h"
 
 static NSString * const kHost = @"http://jira.sudiyi.cn";
 
@@ -29,12 +30,12 @@ NS_INLINE NSString * API_JR(NSString *api) {
 }
 
 
-#pragma mark - login
+#pragma mark - entrance
 
 - (id<TCHTTPRequest>)loginWitUserName:(NSString *)name password:(NSString *)password
                               captcha:(NSString *)captche
                             beforeRun:(void (^)(id<TCHTTPRequest> request))beforeRun {
-    if (nil == name || name.length < 1 || nil == password || password.length < 1) {
+    if (nil == name || name.length < 1 || nil == password || password.length < 1 || JRAccount.currentAccount.isValid) {
         return nil;
     }
     
@@ -71,16 +72,28 @@ NS_INLINE NSString * API_JR(NSString *api) {
 }
 
 
-- (id<TCHTTPRequest>)fetchIssueCreateMetaWithProjectId:(NSString *)projectId
-                                           issuetypeId:(NSString *)issuetypeId
-                                             beforeRun:(void(^)(id<TCHTTPRequest> request))beforeRun {
-    if (nil == projectId || ![projectId isKindOfClass:NSString.class] || nil == issuetypeId || ![issuetypeId isKindOfClass:NSString.class]) {
+#pragma mark - create&update issue
+
+- (id<TCHTTPRequest>)fetchCreateMetaWithProjectId:(NSString *)projectId
+                                          issueId:(NSString *)issuetypeId
+                                     expandFields:(BOOL)expandFields
+                                        beforeRun:(void(^)(id<TCHTTPRequest> request))beforeRun
+{
+    if (nil == projectId || ![projectId isKindOfClass:NSString.class] || projectId.length < 1 || !JRAccount.currentAccount.isValid) {
         return nil;
     }
     
-    id<TCHTTPRequest> request = [self requestWithMethod:kTCHTTPMethodGet apiUrl:API_JR(@"issue/createmeta") host:nil];
-    request.parameters = @{@"projectId": projectId,
-                           @"issuetypeId": issuetypeId};
+    NSDictionary *parameters = @{@"projectId": projectId,
+                                 @"issuetypeId": issuetypeId ?: NSNull.class,
+                                 @"expand": expandFields ? @"projects.issuetypes.fields" : NSNull.null};
+    
+    TCHTTPCachePolicy *policy = [[TCHTTPCachePolicy alloc] init];
+    policy.cacheTimeoutInterval = 5 * D_MINUTE;
+    policy.shouldExpiredCacheValid = YES;
+    [policy setCachePathFilterWithRequestParameters:parameters sensitiveData:JRAccount.currentAccount.name];
+    
+    id<TCHTTPRequest> request = [self requestWithMethod:kTCHTTPMethodGet cachePolicy:policy apiUrl:API_JR(@"issue/createmeta") host:nil];
+    request.parameters = parameters;
     
     if (nil != beforeRun) {
         beforeRun(request);
@@ -89,8 +102,8 @@ NS_INLINE NSString * API_JR(NSString *api) {
     return [request start:NULL] ? request : nil;
 }
 
-- (id<TCHTTPRequest>)updateIssue:(NSDictionary *)data beforeRun:(void (^)(id<TCHTTPRequest> request))beforeRun {
-    if (nil == data || data.count < 1) {
+- (id<TCHTTPRequest>)createIssue:(NSDictionary *)data beforeRun:(void (^)(id<TCHTTPRequest> request))beforeRun {
+    if (nil == data || data.count < 1 || !JRAccount.currentAccount.isValid) {
         return nil;
     }
     
@@ -98,6 +111,29 @@ NS_INLINE NSString * API_JR(NSString *api) {
     
     request.parameters = data;
     
+    if (nil != beforeRun) {
+        beforeRun(request);
+    }
+    
+    return [request start:NULL] ? request : nil;
+}
+
+
+#pragma mark -
+
+- (id<TCHTTPRequest>)fetchProjectListBeforeRun:(void (^)(id<TCHTTPRequest> request))beforeRun {
+    
+    if (!JRAccount.currentAccount.isValid) {
+        return nil;
+    }
+    
+    TCHTTPCachePolicy *policy = [[TCHTTPCachePolicy alloc] init];
+    policy.cacheTimeoutInterval = 5 * D_MINUTE;
+    policy.shouldExpiredCacheValid = YES;
+    [policy setCachePathFilterWithRequestParameters:nil sensitiveData:JRAccount.currentAccount.name];
+    
+    id<TCHTTPRequest> request = [self requestWithMethod:kTCHTTPMethodGet cachePolicy:policy apiUrl:API_JR(@"project") host:nil];
+
     if (nil != beforeRun) {
         beforeRun(request);
     }
